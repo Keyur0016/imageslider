@@ -201,14 +201,14 @@ class ImageSlider extends Component<PropsType, StateType> {
 
     if (onPress) {
       return (
-        <TouchableOpacity
+        <View
           key={index}
           style={[imageStyle, offset]}
-          onPress={() => onPress && onPress({ image, index })}
-          delayPressIn={200}
+          // onPress={() => onPress && onPress({ image, index })}
+          // delayPressIn={200}
         >
           {imageComponent}
-        </TouchableOpacity>
+        </View>
       );
     }
 
