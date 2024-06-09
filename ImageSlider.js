@@ -265,7 +265,7 @@ class ImageSlider extends Component<PropsType, StateType> {
         ) : (
             <View style={styles.buttons}>
               {this.props.images.map((image, index) => (
-                <TouchableHighlight
+                <View
                   key={index}
                   underlayColor="#ccc"
                   onPress={() => this._move(index)}
@@ -275,7 +275,7 @@ class ImageSlider extends Component<PropsType, StateType> {
                   ]}
                 >
                   <View />
-                </TouchableHighlight>
+                </View>
               ))}
             </View>
           )}
